@@ -7,7 +7,7 @@ class OrgViewSerializers(serializers.ModelSerializer):
     class Meta:
         fields = (
             'name',
-            'members',
+            'company',
         )
         model = models.Organisation
 

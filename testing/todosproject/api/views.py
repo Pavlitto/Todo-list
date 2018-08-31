@@ -9,7 +9,7 @@ class OrgViewSet(viewsets.ReadOnlyModelViewSet):
     serializer_class = serializers.OrgViewSerializers
 
     def get_queryset(self):
-        return super().get_queryset().filter(members=self.request.user)
+        return super().get_queryset().filter(company=self.request.user)
 
 
 class TodoViewSet(viewsets.ModelViewSet):
